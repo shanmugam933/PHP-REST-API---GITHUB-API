@@ -25,8 +25,8 @@ $data = json_decode($response,true);
             <dd><?= htmlspecialchars($data["description"])?></dd>
         </dl>
 
-        <a href="Edit.php?full_name=<?=$data["full_name"]?>">Edit</a>
-        <a href="delete.php?full_name=<?=$data["full_name"]?>">Delete</a>
+        <a href="Edit.php?full_name=<?=$data["full_name"]?>" id="edit">Edit</a>
+        <a href="delete.php?full_name=<?=$data["full_name"]?>" id="delete">Delete</a>
        
 <!-- 
         <form action="POST" action="delete.php">
